@@ -40,7 +40,7 @@ class NumbersTest {
     }
 
     @Test
-    void testSummarizeCollection1() {
+    void testSummarizeCollectionMisc1() {
         Collection<Integer> input = Arrays.asList(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12);
         String expectedResult = "-5-6, 8-10, 12";
         String result = numbers.summarizeCollection(input);
@@ -48,7 +48,7 @@ class NumbersTest {
     }
 
     @Test
-    void testSummarizeCollection2() {
+    void testSummarizeCollectionMisc2() {
         Collection<Integer> input = Arrays.asList(-4, -2, 0, 1, 4, 5, 6, 7);
         String expectedResult = "-4, -2, 0-1, 4-7";
         String result = numbers.summarizeCollection(input);
@@ -64,7 +64,7 @@ class NumbersTest {
     }
 
     @Test
-    void testSummarizeCollection4() {
+    void testSummarizeCollectionMisc4() {
         Collection<Integer> input = Arrays.asList(-3, -2, -1, 1, 2, 3);
         String expectedResult = "-3--1, 1-3";
         String result = numbers.summarizeCollection(input);
@@ -72,7 +72,7 @@ class NumbersTest {
     }
 
     @Test
-    void testSummarizeCollection5() {
+    void testSummarizeCollectionMisc5() {
         Collection<Integer> input = Arrays.asList(1, 3, 5, 7);
         String expectedResult = "1, 3, 5, 7";
         String result = numbers.summarizeCollection(input);
